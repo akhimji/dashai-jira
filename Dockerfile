@@ -4,7 +4,6 @@ WORKDIR /go/src/app
 
 COPY jira-influx .
 COPY vendor ./vendor
-ADD config.json .
 
 RUN go-wrapper install
 
